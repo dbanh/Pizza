@@ -491,12 +491,9 @@
                         <outlet property="Cheese" destination="hVN-u2-MZi" id="KCr-lz-1Fc"/>
                         <outlet property="Chicken" destination="Rwx-V9-4BJ" id="ZY1-wU-XpL"/>
                         <outlet property="Ham" destination="7Xo-VJ-ALR" id="5ok-Me-nNg"/>
-                        <outlet property="Large" destination="Zss-zC-J5Y" id="nGk-MO-UWg"/>
-                        <outlet property="Medium" destination="ESN-4m-gJG" id="CPu-lI-ye2"/>
                         <outlet property="Onions" destination="9Bd-A5-Gnx" id="nXi-TF-oq3"/>
                         <outlet property="Peppers" destination="fct-Rc-LOo" id="JLA-GU-RIW"/>
                         <outlet property="Sausage" destination="eqY-iO-0yl" id="OdS-qS-yDi"/>
-                        <outlet property="Small" destination="iHu-fl-zFv" id="ifh-ar-qCr"/>
                         <outlet property="Tomato" destination="Hls-wk-op6" id="mAG-Dn-Sf6"/>
                     </connections>
                 </viewController>
