@@ -11,6 +11,7 @@ import UIKit
 class MainPageViewController: UIViewController {
     
     var PizzaOrder = [CustomPizza]()
+    var DrinkOrder = [CustomDrink]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,16 @@ class MainPageViewController: UIViewController {
     }
     
     
+    
+    @IBAction func CustomizeDrinks(sender: UIButton) {
+        self.performSegueWithIdentifier("CustomizeDrink", sender: self)
+    }
+    
+    
+    @IBAction func ViewOrder(sender: UIButton) {
+        self.performSegueWithIdentifier("ViewOrder", sender: self)
+    }
+    
     // Segue array to Favorites ViewController
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "CustomizePizza") {
@@ -35,11 +46,26 @@ class MainPageViewController: UIViewController {
             var svc = segue.destinationViewController as! ViewController
             
             svc.PizzaOrder = self.PizzaOrder
+            svc.DrinkOrder = self.DrinkOrder
             
             /* var destinationViewController: TestViewController = segue.destinationViewController as! TestViewController
              var arrayToSegue: [CustomPizza] = PizzaOrder
              destinationViewController.PassedPizza = arrayToSegue
              */
+        }
+        else if(segue.identifier == "CustomizeDrink") {
+            
+            var svc = segue.destinationViewController as! SecondViewController
+            
+            svc.PizzaOrder = self.PizzaOrder
+            svc.DrinkOrder = self.DrinkOrder
+    }
+        else if(segue.identifier == "ViewOrder") {
+            
+            var svc = segue.destinationViewController as! OrderViewController
+            
+            svc.PassedPizza = self.PizzaOrder
+            svc.PassedDrink = self.DrinkOrder
         }
     }
 

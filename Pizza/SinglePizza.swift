@@ -8,6 +8,20 @@
 
 import UIKit
 
+class CustomDrink{
+    // MARK: Properties
+    
+    var drink: String
+    var size: String
+    var count: Int
+    
+    init(drink: String, size: String, count: Int){
+        self.drink = drink
+        self.size = size
+        self.count = count
+    }
+}
+
 class CustomPizza{
     // MARK: Properties
     

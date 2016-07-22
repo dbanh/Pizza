@@ -30,7 +30,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Large: UIButton!
     
+    
     var PizzaOrder = [CustomPizza]()
+    var DrinkOrder = [CustomDrink]()
+    var PizzaSize = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +48,17 @@ class ViewController: UIViewController {
     // MARK: Actions
     // Hello
     
+    @IBAction func SmallSize(sender: UIButton) {
+        self.PizzaSize = "small"
+    }
+    
+    @IBAction func MediumSize(sender: UIButton) {
+        self.PizzaSize = "medium"
+    }
+    @IBAction func LargeSize(sender: UIButton) {
+        self.PizzaSize = "large"
+    }
+    
     @IBAction func AddPizza(sender: UIButton) {
         let CheeseBool = Cheese.on
         let TomatoBool = Tomato.on
@@ -54,18 +68,19 @@ class ViewController: UIViewController {
         let HamBool = Ham.on
         let ChickenBool = Chicken.on
         
+    /*
         var PizzaSize = ""
-        
-        if(Small.touchInside == true){
+    
+        if(Small.highlighted == true){
             PizzaSize = "small"
         }
-        else if(Medium.touchInside == true){
+        else if(Medium.highlighted == true){
             PizzaSize = "medium"
         }
-        else if(Large.touchInside == true) {
+        else if(Large.highlighted == true) {
             PizzaSize = "large"
         }
-        
+ */
         
         
         let PizzaOne = CustomPizza(size: PizzaSize, tomato: TomatoBool, cheese: CheeseBool, peppers: PeppersBool, onions: OnionsBool, sausage: SausageBool, ham: HamBool, chicken: ChickenBool)
@@ -98,9 +113,10 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "CartViewer") {
             
-            var svc = segue.destinationViewController as! TableViewController
+            var svc = segue.destinationViewController as! OrderViewController
             
             svc.PassedPizza = self.PizzaOrder
+            svc.PassedDrink = self.DrinkOrder
             
             /* var destinationViewController: TestViewController = segue.destinationViewController as! TestViewController
              var arrayToSegue: [CustomPizza] = PizzaOrder

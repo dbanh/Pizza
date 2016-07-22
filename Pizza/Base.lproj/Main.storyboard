@@ -30,7 +30,8 @@
                                 <rect key="frame" x="60" y="283" width="273" height="239"/>
                                 <state key="normal" title="Add Drinks" image="two_soda_cups"/>
                                 <connections>
-                                    <segue destination="ubK-Bs-Brz" kind="show" id="naX-IG-fMe"/>
+                                    <action selector="CustomizeDrinks:" destination="BIS-pA-FcH" eventType="touchUpInside" id="vxZ-GL-eCQ"/>
+                                    <segue destination="ubK-Bs-Brz" kind="show" identifier="CustomizeDrink" id="naX-IG-fMe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2. Add Drinks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVr-KI-a3P">
@@ -50,6 +51,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="View Order"/>
                                 <connections>
+                                    <action selector="ViewOrder:" destination="BIS-pA-FcH" eventType="touchUpInside" id="Wyh-Bg-YGw"/>
                                     <segue destination="h5z-2p-1bs" kind="show" id="PyP-cz-cir"/>
                                 </connections>
                             </button>
@@ -64,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="-383" y="186"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Order View Controller-->
         <scene sceneID="t4q-OC-VFH">
             <objects>
-                <viewController id="h5z-2p-1bs" customClass="TableViewController" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h5z-2p-1bs" customClass="OrderViewController" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ctB-0d-eO5"/>
                         <viewControllerLayoutGuide type="bottom" id="MWo-AF-cSw"/>
@@ -133,7 +135,8 @@
                                 </constraints>
                                 <state key="normal" title="Return to menu"/>
                                 <connections>
-                                    <segue destination="BIS-pA-FcH" kind="show" id="300-Vd-gSw"/>
+                                    <action selector="ReturnToMenu:" destination="h5z-2p-1bs" eventType="touchUpInside" id="vec-6v-PaX"/>
+                                    <segue destination="BIS-pA-FcH" kind="show" identifier="ReturnToMenu" id="300-Vd-gSw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -161,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u4a-4U-9XR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-325" y="1156"/>
+            <point key="canvasLocation" x="-341" y="1150"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bcl-Jp-HR0">
@@ -195,6 +198,9 @@
                             <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jly-un-9GD">
                                 <rect key="frame" x="20" y="207" width="180" height="100"/>
                                 <state key="normal" title="Orange" image="fanta-sm-1"/>
+                                <connections>
+                                    <action selector="FantaSelect:" destination="ubK-Bs-Brz" eventType="touchUpInside" id="N1R-2e-Zbp"/>
+                                </connections>
                             </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9IV-9d-WT2">
                                 <rect key="frame" x="56" y="377" width="94" height="29"/>
@@ -226,7 +232,8 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="h5z-2p-1bs" kind="show" id="wYk-Lm-aBc"/>
+                                    <action selector="AddToOrder:" destination="ubK-Bs-Brz" eventType="touchUpInside" id="y0H-bR-grr"/>
+                                    <segue destination="h5z-2p-1bs" kind="show" identifier="CartViewerDrinks" id="wYk-Lm-aBc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Small ($2)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbe-BH-y1I">
@@ -300,10 +307,16 @@
                                 </constraints>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                 <state key="normal" title="Coke" image="cola-sm-1"/>
+                                <connections>
+                                    <action selector="CokeSelect:" destination="ubK-Bs-Brz" eventType="touchUpInside" id="8ED-Q4-3a2"/>
+                                </connections>
                             </button>
                             <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oe9-JK-r8l">
                                 <rect key="frame" x="214" y="218" width="180" height="91"/>
                                 <state key="normal" title="Cherry Cola" image="cherry-sm-1"/>
+                                <connections>
+                                    <action selector="CherryCokeSelect:" destination="ubK-Bs-Brz" eventType="touchUpInside" id="eA4-Fc-8eg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smh-9P-cvu">
                                 <rect key="frame" x="34" y="583" width="205" height="43"/>
@@ -334,6 +347,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3a-mi-6Ek">
                                 <rect key="frame" x="214" y="81" width="180" height="120"/>
                                 <state key="normal" title="Button" image="7up-sm-1"/>
+                                <connections>
+                                    <action selector="SevenUpSelect:" destination="ubK-Bs-Brz" eventType="touchUpInside" id="gUm-7o-JAm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -349,8 +365,12 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="CherryCoke" destination="Oe9-JK-r8l" id="LHN-tF-9Jg"/>
+                        <outlet property="Coke" destination="p76-An-8Gl" id="gqn-Uz-Eze"/>
+                        <outlet property="Fanta" destination="Jly-un-9GD" id="wFF-Dk-kGC"/>
                         <outlet property="Large" destination="THr-iP-bZp" id="ErB-cS-hHq"/>
                         <outlet property="Medium" destination="Fbn-vb-qXB" id="OmF-pc-Q3N"/>
+                        <outlet property="SevenUp" destination="d3a-mi-6Ek" id="Whz-um-H96"/>
                         <outlet property="Small" destination="tbv-dW-l8U" id="bdf-na-c1W"/>
                     </connections>
                 </viewController>
@@ -481,6 +501,9 @@
                                     <constraint firstAttribute="width" constant="82" id="nha-oV-3X5"/>
                                 </constraints>
                                 <state key="normal" title="medium $10" image="pizza_black_small_black"/>
+                                <connections>
+                                    <action selector="SmallSize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hsu-pp-o9Y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4H-r5-GY6">
                                 <rect key="frame" x="106" y="107" width="116" height="95"/>
@@ -489,6 +512,9 @@
                                     <constraint firstAttribute="height" constant="95" id="tl7-dd-3Hq"/>
                                 </constraints>
                                 <state key="normal" title="medium $10" image="pizza_black_med_black"/>
+                                <connections>
+                                    <action selector="MediumSize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m4z-uG-lLf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVt-a8-r6f">
                                 <rect key="frame" x="232" y="78" width="166" height="142"/>
@@ -497,6 +523,9 @@
                                     <constraint firstAttribute="height" constant="142" id="fhf-t5-65b"/>
                                 </constraints>
                                 <state key="normal" title="large $15" image="pizza_black_lg_black"/>
+                                <connections>
+                                    <action selector="LargeSize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="up9-wP-X8G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nr-P5-MrY">
                                 <rect key="frame" x="63" y="651" width="106" height="30"/>
@@ -608,7 +637,7 @@
         <image name="whole_pizza" width="200" height="188"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PyP-cz-cir"/>
-        <segue reference="Ub4-gJ-gwB"/>
+        <segue reference="wYk-Lm-aBc"/>
+        <segue reference="Gm3-Ak-JDr"/>
     </inferredMetricsTieBreakers>
 </document>
