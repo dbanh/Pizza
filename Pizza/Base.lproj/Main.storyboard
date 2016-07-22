@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Page View Controller-->
         <scene sceneID="c7s-vi-zvd">
             <objects>
-                <viewController id="BIS-pA-FcH" sceneMemberID="viewController">
+                <viewController id="BIS-pA-FcH" customClass="MainPageViewController" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tu3-6T-og2"/>
                         <viewControllerLayoutGuide type="bottom" id="XXv-bb-dDn"/>
@@ -22,7 +22,8 @@
                                 <rect key="frame" x="113" y="36" width="207" height="188"/>
                                 <state key="normal" title="Add Pizza" image="whole_pizza"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="dxb-G5-cFj"/>
+                                    <action selector="CustomizePizza:" destination="BIS-pA-FcH" eventType="touchUpInside" id="ulU-0H-Eq2"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="CustomizePizza" id="dxb-G5-cFj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNq-lD-r10">
@@ -61,12 +62,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdp-0O-GLE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-375" y="245"/>
+            <point key="canvasLocation" x="-383" y="186"/>
         </scene>
-        <!--View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="t4q-OC-VFH">
             <objects>
-                <viewController id="h5z-2p-1bs" customClass="GLKViewController" sceneMemberID="viewController">
+                <viewController id="h5z-2p-1bs" customClass="TableViewController" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ctB-0d-eO5"/>
                         <viewControllerLayoutGuide type="bottom" id="MWo-AF-cSw"/>
@@ -82,7 +83,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </tableView>
@@ -160,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u4a-4U-9XR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-375" y="1028"/>
+            <point key="canvasLocation" x="-325" y="1156"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bcl-Jp-HR0">
@@ -457,7 +458,8 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="h5z-2p-1bs" kind="show" id="qeb-KI-QLc"/>
+                                    <action selector="AddPizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HIj-Xg-CoZ"/>
+                                    <segue destination="h5z-2p-1bs" kind="show" identifier="CartViewer" id="qeb-KI-QLc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose size and customize!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTF-pk-GoO">
@@ -576,6 +578,18 @@
                     <navigationItem key="navigationItem" id="B70-d4-KiO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="Cheese" destination="hVN-u2-MZi" id="SJE-d8-UsM"/>
+                        <outlet property="Chicken" destination="Rwx-V9-4BJ" id="vSf-ks-E9J"/>
+                        <outlet property="Ham" destination="7Xo-VJ-ALR" id="eHo-7d-i4m"/>
+                        <outlet property="Large" destination="hVt-a8-r6f" id="Ipc-bT-ALp"/>
+                        <outlet property="Medium" destination="W4H-r5-GY6" id="o2k-xA-qiD"/>
+                        <outlet property="Onions" destination="9Bd-A5-Gnx" id="xf9-sE-Q3k"/>
+                        <outlet property="Peppers" destination="fct-Rc-LOo" id="dwL-61-1My"/>
+                        <outlet property="Sausage" destination="eqY-iO-0yl" id="K6n-Ke-tbV"/>
+                        <outlet property="Small" destination="UDK-GF-viA" id="EnF-ir-PmV"/>
+                        <outlet property="Tomato" destination="Hls-wk-op6" id="4zO-hQ-f5M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -594,7 +608,7 @@
         <image name="whole_pizza" width="200" height="188"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="300-Vd-gSw"/>
-        <segue reference="wYk-Lm-aBc"/>
+        <segue reference="PyP-cz-cir"/>
+        <segue reference="Ub4-gJ-gwB"/>
     </inferredMetricsTieBreakers>
 </document>

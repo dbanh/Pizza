@@ -18,6 +18,9 @@
 		9AA9EF351D3DBD6F00593E98 /* PizzaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9EF341D3DBD6F00593E98 /* PizzaUITests.swift */; };
 		9AC852561D41A50B0052A947 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC852551D41A50B0052A947 /* SecondViewController.swift */; };
 		9AC852581D41AFF80052A947 /* CustomerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC852571D41AFF80052A947 /* CustomerOrder.swift */; };
+		9AFDD8941D420E7700DCC2CB /* SinglePizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDD8931D420E7700DCC2CB /* SinglePizza.swift */; };
+		9AFDD8961D42103500DCC2CB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDD8951D42103500DCC2CB /* TableViewController.swift */; };
+		9AFDD8981D42128D00DCC2CB /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDD8971D42128D00DCC2CB /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		9AA9EF361D3DBD6F00593E98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AC852551D41A50B0052A947 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9AC852571D41AFF80052A947 /* CustomerOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerOrder.swift; sourceTree = "<group>"; };
+		9AFDD8931D420E7700DCC2CB /* SinglePizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePizza.swift; sourceTree = "<group>"; };
+		9AFDD8951D42103500DCC2CB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9AFDD8971D42128D00DCC2CB /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +111,12 @@
 		9AA9EF131D3DBD6F00593E98 /* Pizza */ = {
 			isa = PBXGroup;
 			children = (
+				9AFDD8931D420E7700DCC2CB /* SinglePizza.swift */,
 				9AA9EF141D3DBD6F00593E98 /* AppDelegate.swift */,
 				9AA9EF161D3DBD6F00593E98 /* ViewController.swift */,
 				9AA9EF181D3DBD6F00593E98 /* Main.storyboard */,
+				9AFDD8971D42128D00DCC2CB /* MainPageViewController.swift */,
+				9AFDD8951D42103500DCC2CB /* TableViewController.swift */,
 				853CB8851D41D266009C99DB /* ThirdViewControlerViewController.swift */,
 				9AC852571D41AFF80052A947 /* CustomerOrder.swift */,
 				9AC852551D41A50B0052A947 /* SecondViewController.swift */,
@@ -271,8 +280,11 @@
 				853CB8881D41DA91009C99DB /* FourthViewController.swift in Sources */,
 				9AC852581D41AFF80052A947 /* CustomerOrder.swift in Sources */,
 				853CB8861D41D266009C99DB /* ThirdViewControlerViewController.swift in Sources */,
+				9AFDD8961D42103500DCC2CB /* TableViewController.swift in Sources */,
 				9AC852561D41A50B0052A947 /* SecondViewController.swift in Sources */,
 				9AA9EF171D3DBD6F00593E98 /* ViewController.swift in Sources */,
+				9AFDD8941D420E7700DCC2CB /* SinglePizza.swift in Sources */,
+				9AFDD8981D42128D00DCC2CB /* MainPageViewController.swift in Sources */,
 				9AA9EF151D3DBD6F00593E98 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
