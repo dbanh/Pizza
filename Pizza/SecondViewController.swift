@@ -24,20 +24,20 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var Small: UILabel!
 
     @IBAction func SmallStepper(sender: UIStepper) {
-        self.Small.text = sender.value.description
+        self.Small.text = Int(sender.value).description
     }
     
     
     @IBOutlet weak var Medium: UILabel!
     
     @IBAction func MediumStepper(sender: UIStepper) {
-        self.Medium.text = sender.value.description
+        self.Medium.text = Int(sender.value).description
     }
     
     @IBOutlet weak var Large: UILabel!
     
     @IBAction func LargeStepper(sender: UIStepper) {
-        self.Large.text = sender.value.description
+        self.Large.text = Int(sender.value).description
     }
     
         
