@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		853CB8861D41D266009C99DB /* ThirdViewControlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853CB8851D41D266009C99DB /* ThirdViewControlerViewController.swift */; };
+		853CB8881D41DA91009C99DB /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853CB8871D41DA91009C99DB /* FourthViewController.swift */; };
 		9AA9EF151D3DBD6F00593E98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9EF141D3DBD6F00593E98 /* AppDelegate.swift */; };
 		9AA9EF171D3DBD6F00593E98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA9EF161D3DBD6F00593E98 /* ViewController.swift */; };
 		9AA9EF1A1D3DBD6F00593E98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA9EF181D3DBD6F00593E98 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		853CB8851D41D266009C99DB /* ThirdViewControlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewControlerViewController.swift; sourceTree = "<group>"; };
+		853CB8871D41DA91009C99DB /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		9AA9EF111D3DBD6F00593E98 /* Pizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA9EF141D3DBD6F00593E98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AA9EF161D3DBD6F00593E98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,9 +108,11 @@
 				9AA9EF141D3DBD6F00593E98 /* AppDelegate.swift */,
 				9AA9EF161D3DBD6F00593E98 /* ViewController.swift */,
 				9AA9EF181D3DBD6F00593E98 /* Main.storyboard */,
+				853CB8851D41D266009C99DB /* ThirdViewControlerViewController.swift */,
 				9AC852571D41AFF80052A947 /* CustomerOrder.swift */,
 				9AC852551D41A50B0052A947 /* SecondViewController.swift */,
 				9AA9EF1B1D3DBD6F00593E98 /* Assets.xcassets */,
+				853CB8871D41DA91009C99DB /* FourthViewController.swift */,
 				9AA9EF1D1D3DBD6F00593E98 /* LaunchScreen.storyboard */,
 				9AA9EF201D3DBD6F00593E98 /* Info.plist */,
 			);
@@ -262,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				853CB8881D41DA91009C99DB /* FourthViewController.swift in Sources */,
 				9AC852581D41AFF80052A947 /* CustomerOrder.swift in Sources */,
+				853CB8861D41D266009C99DB /* ThirdViewControlerViewController.swift in Sources */,
 				9AC852561D41A50B0052A947 /* SecondViewController.swift in Sources */,
 				9AA9EF171D3DBD6F00593E98 /* ViewController.swift in Sources */,
 				9AA9EF151D3DBD6F00593E98 /* AppDelegate.swift in Sources */,
