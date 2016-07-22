@@ -8,18 +8,17 @@
 
 import UIKit
 
-/*
-class CustomerOrder {
-    // MARK: Properties
-    
-    var size: String
-    var tomato: Bool
-    var cheese: Bool
-    var peppers: Bool
-    var onions: Bool
-    var sausage: Bool
-    var ham: Bool
-    var chicken: Bool
-    
+class Order {
+    var PizzaOrder = [CustomPizza]()
 }
- */
+
+var sharedOrder : Order {
+    struct Static {
+        static let instance : Order = Order()
+    }
+    return Static.instance
+}
+
+
+
+

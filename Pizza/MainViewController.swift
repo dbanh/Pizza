@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  MainViewController.swift
 //  Pizza
 //
 //  Created by Denise Banh on 7/21/16.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class MainViewController: UIViewController {
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,27 +22,7 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var Small: UILabel!
 
-    @IBAction func SmallStepper(sender: UIStepper) {
-        self.Small.text = sender.value.description
-    }
-    
-    
-    @IBOutlet weak var Medium: UILabel!
-    
-    @IBAction func MediumStepper(sender: UIStepper) {
-        self.Medium.text = sender.value.description
-    }
-    
-    @IBOutlet weak var Large: UILabel!
-    
-    @IBAction func LargeStepper(sender: UIStepper) {
-        self.Large.text = sender.value.description
-    }
-    
-        
-    
     /*
     // MARK: - Navigation
 

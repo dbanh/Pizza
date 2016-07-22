@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="c7s-vi-zvd">
             <objects>
-                <viewController id="BIS-pA-FcH" sceneMemberID="viewController">
+                <viewController id="BIS-pA-FcH" customClass="MainViewController" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tu3-6T-og2"/>
                         <viewControllerLayoutGuide type="bottom" id="XXv-bb-dDn"/>
@@ -46,6 +46,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdp-0O-GLE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-375" y="245"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="9uw-sd-gWG">
+            <objects>
+                <viewController id="Osb-AG-PY9" customClass="TestViewController" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hRz-FL-070"/>
+                        <viewControllerLayoutGuide type="bottom" id="OzX-hK-OX5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F6w-5t-t1b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcy-Kk-xzw">
+                                <rect key="frame" x="169" y="146" width="192" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="TestLabel" destination="Lcy-Kk-xzw" id="9Tc-Qn-DlP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OFK-Qe-2fz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592" y="209"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="sFy-xf-yjg">
@@ -337,6 +368,10 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="Submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IoA-hL-C4U"/>
+                                    <segue destination="Osb-AG-PY9" kind="show" id="GRB-ZM-emA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EZt-pD-Dc8">
                                 <rect key="frame" x="59" y="649" width="89" height="35"/>
@@ -429,6 +464,18 @@
                     <navigationItem key="navigationItem" id="B70-d4-KiO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="Cheese" destination="hVN-u2-MZi" id="KCr-lz-1Fc"/>
+                        <outlet property="Chicken" destination="Rwx-V9-4BJ" id="ZY1-wU-XpL"/>
+                        <outlet property="Ham" destination="7Xo-VJ-ALR" id="5ok-Me-nNg"/>
+                        <outlet property="Large" destination="Zss-zC-J5Y" id="nGk-MO-UWg"/>
+                        <outlet property="Medium" destination="ESN-4m-gJG" id="CPu-lI-ye2"/>
+                        <outlet property="Onions" destination="9Bd-A5-Gnx" id="nXi-TF-oq3"/>
+                        <outlet property="Peppers" destination="fct-Rc-LOo" id="JLA-GU-RIW"/>
+                        <outlet property="Sausage" destination="eqY-iO-0yl" id="OdS-qS-yDi"/>
+                        <outlet property="Small" destination="iHu-fl-zFv" id="ifh-ar-qCr"/>
+                        <outlet property="Tomato" destination="Hls-wk-op6" id="mAG-Dn-Sf6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

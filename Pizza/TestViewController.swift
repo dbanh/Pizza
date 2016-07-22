@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  TestViewController.swift
 //  Pizza
 //
 //  Created by Denise Banh on 7/21/16.
@@ -8,40 +8,30 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class TestViewController: UIViewController {
+    
+       @IBOutlet weak var TestLabel: UILabel!
+    var PassedPizza = [CustomPizza]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let otherVC = ViewController()
+        PassedPizza = otherVC.PizzaOrder
+        
+        TestLabel.text = PassedPizza[0].size
 
         // Do any additional setup after loading the view.
     }
 
+ 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var Small: UILabel!
 
-    @IBAction func SmallStepper(sender: UIStepper) {
-        self.Small.text = sender.value.description
-    }
-    
-    
-    @IBOutlet weak var Medium: UILabel!
-    
-    @IBAction func MediumStepper(sender: UIStepper) {
-        self.Medium.text = sender.value.description
-    }
-    
-    @IBOutlet weak var Large: UILabel!
-    
-    @IBAction func LargeStepper(sender: UIStepper) {
-        self.Large.text = sender.value.description
-    }
-    
-        
-    
     /*
     // MARK: - Navigation
 
