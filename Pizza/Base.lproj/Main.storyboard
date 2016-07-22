@@ -63,7 +63,7 @@
             </objects>
             <point key="canvasLocation" x="-375" y="245"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="t4q-OC-VFH">
             <objects>
                 <viewController id="h5z-2p-1bs" customClass="GLKViewController" sceneMemberID="viewController">
@@ -78,11 +78,18 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MQS-Qa-Ezi">
                                 <rect key="frame" x="0.0" y="44" width="414" height="472"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please add an item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gIT-ss-STA">
+                                <toolbar key="tableHeaderView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Cxg-q5-4DL">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <items>
+                                        <barButtonItem title="Large cheese tomato sausage $16.00" id="qjQ-TG-Rdg"/>
+                                    </items>
+                                </toolbar>
+                                <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gIT-ss-STA">
+                                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </tableView>
@@ -99,7 +106,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uta-rO-CSg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uta-rO-CSg">
                                 <rect key="frame" x="273" y="589" width="94" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="94" id="1z4-Q3-pNo"/>
@@ -155,6 +162,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="gLO-DI-1As" secondAttribute="trailing" constant="8" id="yxH-l3-n6v"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="3dO-Cj-wKe"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
@@ -317,7 +325,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkl-oW-WHd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkl-oW-WHd">
                                 <rect key="frame" x="262" y="591" width="94" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -369,70 +377,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="Hls-wk-op6">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="Hls-wk-op6">
                                 <rect key="frame" x="101" y="281" width="51" height="31"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="hVN-u2-MZi">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="hVN-u2-MZi">
                                 <rect key="frame" x="101" y="239" width="51" height="31"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="9Bd-A5-Gnx">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="9Bd-A5-Gnx">
                                 <rect key="frame" x="101" y="366" width="51" height="31"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="fct-Rc-LOo">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="fct-Rc-LOo">
                                 <rect key="frame" x="101" y="324" width="51" height="31"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="7Xo-VJ-ALR">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="7Xo-VJ-ALR">
                                 <rect key="frame" x="101" y="451" width="51" height="31"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="eqY-iO-0yl">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="eqY-iO-0yl">
                                 <rect key="frame" x="101" y="409" width="51" height="31"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="Rwx-V9-4BJ">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="Rwx-V9-4BJ">
                                 <rect key="frame" x="101" y="494" width="51" height="31"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheese (+$0)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dx-eQ-IXq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cheese (+$0)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dx-eQ-IXq">
                                 <rect key="frame" x="170" y="244" width="142" height="28"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tomato (+$0)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssQ-tb-PpT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tomato (+$0)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssQ-tb-PpT">
                                 <rect key="frame" x="170" y="286" width="142" height="28"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peppers (+$0)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpd-BN-cPu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Peppers (+$0)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpd-BN-cPu">
                                 <rect key="frame" x="170" y="329" width="148" height="28"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onions (+$0)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCm-K4-zvP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Onions (+$0)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCm-K4-zvP">
                                 <rect key="frame" x="170" y="371" width="142" height="28"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sausage (+$1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-b0-5ey">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sausage (+$1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-b0-5ey">
                                 <rect key="frame" x="170" y="414" width="149" height="28"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ham (+$1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fU-9W-r1b">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ham (+$1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fU-9W-r1b">
                                 <rect key="frame" x="171" y="456" width="141" height="28"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken (+$1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="day-ft-4m8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Chicken (+$1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="day-ft-4m8">
                                 <rect key="frame" x="170" y="499" width="144" height="28"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="264-MK-dVQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="264-MK-dVQ">
                                 <rect key="frame" x="46" y="581" width="205" height="43"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Subtotal: $">
@@ -445,28 +453,13 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nEK-MW-5SD">
-                                <rect key="frame" x="220" y="645" width="149" height="41"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Add to order">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <segue destination="h5z-2p-1bs" kind="show" id="qeb-KI-QLc"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose size and customize!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTF-pk-GoO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Choose size and customize!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTF-pk-GoO">
                                 <rect key="frame" x="100" y="42" width="214" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba7-Gl-b31">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="16.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba7-Gl-b31">
                                 <rect key="frame" x="274" y="589" width="94" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -488,7 +481,7 @@
                                 </constraints>
                                 <state key="normal" title="medium $10" image="pizza_black_med_black"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVt-a8-r6f">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVt-a8-r6f">
                                 <rect key="frame" x="232" y="78" width="166" height="142"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="166" id="2ua-hi-jHG"/>
@@ -497,17 +490,30 @@
                                 <state key="normal" title="large $15" image="pizza_black_lg_black"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nr-P5-MrY">
-                                <rect key="frame" x="63" y="651" width="106" height="30"/>
-                                <state key="normal" title="Return to menu"/>
+                                <rect key="frame" x="89" y="651" width="55" height="30"/>
+                                <state key="normal" title="Remove"/>
                                 <connections>
                                     <segue destination="BIS-pA-FcH" kind="show" id="Ub4-gJ-gwB"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h3T-8l-OYK">
+                                <rect key="frame" x="201" y="647" width="191" height="38"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Update order">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9Bd-A5-Gnx" firstAttribute="leading" secondItem="fct-Rc-LOo" secondAttribute="leading" id="1I0-Vg-Qdw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nEK-MW-5SD" secondAttribute="trailing" constant="25" id="1ML-D4-hTd"/>
                             <constraint firstItem="Rwx-V9-4BJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="81" id="1Mg-QZ-RZE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0dx-eQ-IXq" secondAttribute="trailing" constant="82" id="1j0-s1-BcX"/>
                             <constraint firstItem="9Bd-A5-Gnx" firstAttribute="centerX" secondItem="fct-Rc-LOo" secondAttribute="centerX" id="39Y-Nq-Z7K"/>
@@ -533,7 +539,6 @@
                             <constraint firstItem="Hls-wk-op6" firstAttribute="centerX" secondItem="hVN-u2-MZi" secondAttribute="centerX" id="OoN-TH-xmC"/>
                             <constraint firstItem="ssQ-tb-PpT" firstAttribute="top" secondItem="0dx-eQ-IXq" secondAttribute="bottom" constant="14" id="Qbh-Qp-ah6"/>
                             <constraint firstItem="264-MK-dVQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="Sr1-a1-v2e"/>
-                            <constraint firstItem="nEK-MW-5SD" firstAttribute="top" secondItem="264-MK-dVQ" secondAttribute="bottom" constant="21" id="Ucd-H8-rqB"/>
                             <constraint firstItem="zTF-pk-GoO" firstAttribute="trailing" secondItem="day-ft-4m8" secondAttribute="trailing" id="WcJ-77-oOa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8fU-9W-r1b" secondAttribute="trailing" constant="82" id="X2g-fs-RYg"/>
                             <constraint firstItem="jCm-K4-zvP" firstAttribute="top" secondItem="Zpd-BN-cPu" secondAttribute="bottom" constant="14" id="XEC-gd-w7x"/>
@@ -567,10 +572,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="264-MK-dVQ" secondAttribute="trailing" constant="143" id="sRm-j2-c4s"/>
                             <constraint firstItem="M5f-b0-5ey" firstAttribute="top" secondItem="jCm-K4-zvP" secondAttribute="bottom" constant="15" id="v3z-0d-Opo"/>
                             <constraint firstItem="9Bd-A5-Gnx" firstAttribute="top" secondItem="fct-Rc-LOo" secondAttribute="bottom" constant="11" id="viA-b5-ySu"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nEK-MW-5SD" secondAttribute="bottom" constant="50" id="xO6-lN-5Is"/>
                             <constraint firstItem="7Xo-VJ-ALR" firstAttribute="top" secondItem="eqY-iO-0yl" secondAttribute="bottom" constant="11" id="zP6-nk-J1P"/>
                             <constraint firstItem="Hls-wk-op6" firstAttribute="top" secondItem="hVN-u2-MZi" secondAttribute="bottom" constant="11" id="zUZ-GB-Mqt"/>
-                            <constraint firstItem="nEK-MW-5SD" firstAttribute="top" secondItem="264-MK-dVQ" secondAttribute="bottom" constant="21" id="zg8-bj-wHZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="B70-d4-KiO"/>
@@ -594,7 +597,7 @@
         <image name="whole_pizza" width="200" height="188"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="300-Vd-gSw"/>
         <segue reference="wYk-Lm-aBc"/>
+        <segue reference="300-Vd-gSw"/>
     </inferredMetricsTieBreakers>
 </document>
