@@ -18,23 +18,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9c-CX-hyA">
-                                <rect key="frame" x="173" y="88" width="68" height="30"/>
-                                <state key="normal" title="Add Pizza"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9c-CX-hyA">
+                                <rect key="frame" x="113" y="36" width="281" height="188"/>
+                                <state key="normal" title="Add Pizza" image="whole_pizza"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="dxb-G5-cFj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRS-8f-ISu">
-                                <rect key="frame" x="170" y="626" width="77" height="30"/>
-                                <state key="normal" title="View Order"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNq-lD-r10">
-                                <rect key="frame" x="170" y="325" width="75" height="30"/>
-                                <state key="normal" title="Add Drinks"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNq-lD-r10">
+                                <rect key="frame" x="60" y="283" width="273" height="239"/>
+                                <state key="normal" title="Add Drinks" image="two_soda_cups"/>
                                 <connections>
                                     <segue destination="ubK-Bs-Brz" kind="show" id="naX-IG-fMe"/>
                                 </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2. Add Drinks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVr-KI-a3P">
+                                <rect key="frame" x="161" y="530" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Customize Your Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruP-oO-oe1">
+                                <rect key="frame" x="126" y="232" width="163" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRS-8f-ISu">
+                                <rect key="frame" x="143" y="656" width="129" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="View Order"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,21 +72,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p76-An-8Gl">
-                                <rect key="frame" x="87" y="120" width="36" height="30"/>
-                                <state key="normal" title="Coke"/>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpZ-MJ-4Sp">
+                                <rect key="frame" x="212" y="79" width="180" height="108"/>
+                                <color key="backgroundColor" red="0.043686516582965851" green="0.12107238918542862" blue="0.091846533119678497" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="7Up" image="7up-sm"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpZ-MJ-4Sp">
-                                <rect key="frame" x="247" y="120" width="30" height="30"/>
-                                <state key="normal" title="7Up"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jly-un-9GD">
-                                <rect key="frame" x="83" y="252" width="51" height="30"/>
-                                <state key="normal" title="Orange"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oe9-JK-r8l">
-                                <rect key="frame" x="239" y="252" width="82" height="30"/>
-                                <state key="normal" title="Cherry Cola"/>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jly-un-9GD">
+                                <rect key="frame" x="20" y="207" width="180" height="100"/>
+                                <state key="normal" title="Orange" image="fanta-sm"/>
                             </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9IV-9d-WT2">
                                 <rect key="frame" x="56" y="377" width="94" height="29"/>
@@ -93,18 +100,6 @@
                                     <action selector="LargeStepper:" destination="ubK-Bs-Brz" eventType="valueChanged" id="Dey-ft-aIC"/>
                                 </connections>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxY-tR-Was">
-                                <rect key="frame" x="109" y="583" width="148" height="43"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Subtotal:">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="36" name="HelveticaNeue-Thin"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VJX-fn-7BB">
                                 <rect key="frame" x="228" y="647" width="149" height="41"/>
                                 <state key="normal">
@@ -186,9 +181,41 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add drinks to your order!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFh-Cg-gJL">
-                                <rect key="frame" x="89" y="45" width="190" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select drinks to add to your order!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFh-Cg-gJL">
+                                <rect key="frame" x="76" y="39" width="261" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p76-An-8Gl">
+                                <rect key="frame" x="20" y="81" width="178" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="2rG-Tk-113"/>
+                                    <constraint firstAttribute="height" constant="104" id="Bdb-WK-JAT"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Coke" image="cola-sm"/>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oe9-JK-r8l">
+                                <rect key="frame" x="214" y="211" width="180" height="91"/>
+                                <state key="normal" title="Cherry Cola" image="cherry-sm"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smh-9P-cvu">
+                                <rect key="frame" x="34" y="583" width="205" height="43"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Subtotal: $">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="36" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkl-oW-WHd">
+                                <rect key="frame" x="262" y="591" width="94" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -282,45 +309,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OKB-lY-6FH">
-                                <rect key="frame" x="4" y="73" width="404" height="142"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHu-fl-zFv">
-                                        <rect key="frame" x="0.0" y="36" width="82" height="70"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="456-aa-iYs"/>
-                                            <constraint firstAttribute="width" constant="82" id="jjk-AF-qCA"/>
-                                        </constraints>
-                                        <state key="normal" title="medium $10" image="pizza_black_small_black"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESN-4m-gJG">
-                                        <rect key="frame" x="102" y="24" width="116" height="95"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="116" id="Mm5-jc-waW"/>
-                                            <constraint firstAttribute="height" constant="95" id="j4n-NV-ADe"/>
-                                        </constraints>
-                                        <state key="normal" title="medium $10" image="pizza_black_med_black"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zss-zC-J5Y">
-                                        <rect key="frame" x="238" y="0.0" width="166" height="142"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="142" id="PLd-VI-gDt"/>
-                                            <constraint firstAttribute="width" constant="166" id="o5j-Yj-bh8"/>
-                                        </constraints>
-                                        <state key="normal" title="large $15" image="pizza_black_lg_black"/>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Zss-zC-J5Y" firstAttribute="leading" secondItem="ESN-4m-gJG" secondAttribute="trailing" constant="10" id="M1R-3b-EcW"/>
-                                </constraints>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="264-MK-dVQ">
-                                <rect key="frame" x="101" y="581" width="148" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="264-MK-dVQ">
+                                <rect key="frame" x="46" y="581" width="205" height="43"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Subtotal:">
+                                    <fragment content="Subtotal: $">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="36" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -353,6 +349,36 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose size and customize!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTF-pk-GoO">
                                 <rect key="frame" x="100" y="42" width="214" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDK-GF-viA">
+                                <rect key="frame" x="14" y="119" width="82" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="n4B-z1-7tU"/>
+                                    <constraint firstAttribute="width" constant="82" id="nha-oV-3X5"/>
+                                </constraints>
+                                <state key="normal" title="medium $10" image="pizza_black_small_black"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4H-r5-GY6">
+                                <rect key="frame" x="106" y="107" width="116" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="2Th-fr-xkI"/>
+                                    <constraint firstAttribute="height" constant="95" id="tl7-dd-3Hq"/>
+                                </constraints>
+                                <state key="normal" title="medium $10" image="pizza_black_med_black"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVt-a8-r6f">
+                                <rect key="frame" x="232" y="78" width="166" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="2ua-hi-jHG"/>
+                                    <constraint firstAttribute="height" constant="142" id="fhf-t5-65b"/>
+                                </constraints>
+                                <state key="normal" title="large $15" image="pizza_black_lg_black"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba7-Gl-b31">
+                                <rect key="frame" x="274" y="589" width="94" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -394,13 +420,11 @@
                             <constraint firstItem="jCm-K4-zvP" firstAttribute="top" secondItem="Zpd-BN-cPu" secondAttribute="bottom" constant="14" id="XEC-gd-w7x"/>
                             <constraint firstItem="day-ft-4m8" firstAttribute="top" secondItem="8fU-9W-r1b" secondAttribute="bottom" constant="15" id="Yig-7P-wcH"/>
                             <constraint firstItem="ssQ-tb-PpT" firstAttribute="leading" secondItem="Hls-wk-op6" secondAttribute="trailing" constant="20" id="bAJ-NX-BMe"/>
-                            <constraint firstItem="OKB-lY-6FH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-13" id="cMZ-02-1IQ"/>
                             <constraint firstItem="264-MK-dVQ" firstAttribute="top" secondItem="day-ft-4m8" secondAttribute="bottom" constant="54" id="dmo-uK-Rdn"/>
                             <constraint firstItem="9Bd-A5-Gnx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="81" id="fHS-X5-UAP"/>
                             <constraint firstItem="Zpd-BN-cPu" firstAttribute="top" secondItem="ssQ-tb-PpT" secondAttribute="bottom" constant="15" id="fdO-91-Olj"/>
                             <constraint firstItem="0dx-eQ-IXq" firstAttribute="leading" secondItem="hVN-u2-MZi" secondAttribute="trailing" constant="20" id="g8U-sM-FfC"/>
                             <constraint firstItem="Zpd-BN-cPu" firstAttribute="leading" secondItem="fct-Rc-LOo" secondAttribute="trailing" constant="20" id="gdE-mq-1We"/>
-                            <constraint firstItem="0dx-eQ-IXq" firstAttribute="top" secondItem="OKB-lY-6FH" secondAttribute="bottom" constant="29" id="h3f-hR-N2w"/>
                             <constraint firstAttribute="trailingMargin" secondItem="M5f-b0-5ey" secondAttribute="trailing" constant="75" id="i8w-v7-BJC"/>
                             <constraint firstItem="7Xo-VJ-ALR" firstAttribute="centerX" secondItem="eqY-iO-0yl" secondAttribute="centerX" id="icb-q2-Zdb"/>
                             <constraint firstItem="9Bd-A5-Gnx" firstAttribute="centerX" secondItem="fct-Rc-LOo" secondAttribute="centerX" id="j9i-w9-8bB"/>
@@ -417,7 +441,6 @@
                             <constraint firstItem="ssQ-tb-PpT" firstAttribute="top" secondItem="0dx-eQ-IXq" secondAttribute="bottom" constant="14" id="rin-UU-ly7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="day-ft-4m8" secondAttribute="trailing" constant="80" id="sJC-Bh-vZX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="264-MK-dVQ" secondAttribute="trailing" constant="145" id="sRm-j2-c4s"/>
-                            <constraint firstItem="hVN-u2-MZi" firstAttribute="top" secondItem="OKB-lY-6FH" secondAttribute="bottom" constant="24" id="umE-Ir-9F5"/>
                             <constraint firstItem="M5f-b0-5ey" firstAttribute="top" secondItem="jCm-K4-zvP" secondAttribute="bottom" constant="15" id="v3z-0d-Opo"/>
                             <constraint firstItem="9Bd-A5-Gnx" firstAttribute="top" secondItem="fct-Rc-LOo" secondAttribute="bottom" constant="11" id="viA-b5-ySu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nEK-MW-5SD" secondAttribute="bottom" constant="50" id="xO6-lN-5Is"/>
@@ -436,8 +459,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="7up-sm" width="300" height="200"/>
+        <image name="cherry-sm" width="300" height="200"/>
+        <image name="cola-sm" width="300" height="200"/>
+        <image name="fanta-sm" width="300" height="200"/>
         <image name="pizza_black_lg_black" width="300" height="287"/>
         <image name="pizza_black_med_black" width="300" height="287"/>
         <image name="pizza_black_small_black" width="300" height="287"/>
+        <image name="two_soda_cups" width="500" height="400"/>
+        <image name="whole_pizza" width="200" height="188"/>
     </resources>
 </document>
