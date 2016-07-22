@@ -282,8 +282,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OKB-lY-6FH">
-                                <rect key="frame" x="7" y="73" width="404" height="142"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OKB-lY-6FH">
+                                <rect key="frame" x="4" y="73" width="404" height="142"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHu-fl-zFv">
                                         <rect key="frame" x="0.0" y="36" width="82" height="70"/>
@@ -291,7 +291,7 @@
                                             <constraint firstAttribute="height" constant="70" id="456-aa-iYs"/>
                                             <constraint firstAttribute="width" constant="82" id="jjk-AF-qCA"/>
                                         </constraints>
-                                        <state key="normal" title="medium $10" image="pizza-icon-450x450"/>
+                                        <state key="normal" title="medium $10" image="pizza_black_small_black"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESN-4m-gJG">
                                         <rect key="frame" x="102" y="24" width="116" height="95"/>
@@ -299,7 +299,7 @@
                                             <constraint firstAttribute="width" constant="116" id="Mm5-jc-waW"/>
                                             <constraint firstAttribute="height" constant="95" id="j4n-NV-ADe"/>
                                         </constraints>
-                                        <state key="normal" title="medium $10" image="pizza-icon-450x450"/>
+                                        <state key="normal" title="medium $10" image="pizza_black_med_black"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zss-zC-J5Y">
                                         <rect key="frame" x="238" y="0.0" width="166" height="142"/>
@@ -307,9 +307,12 @@
                                             <constraint firstAttribute="height" constant="142" id="PLd-VI-gDt"/>
                                             <constraint firstAttribute="width" constant="166" id="o5j-Yj-bh8"/>
                                         </constraints>
-                                        <state key="normal" title="large $15" image="pizza-icon-450x450"/>
+                                        <state key="normal" title="large $15" image="pizza_black_lg_black"/>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Zss-zC-J5Y" firstAttribute="leading" secondItem="ESN-4m-gJG" secondAttribute="trailing" constant="10" id="M1R-3b-EcW"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="264-MK-dVQ">
                                 <rect key="frame" x="101" y="581" width="148" height="43"/>
@@ -348,7 +351,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose size and customize!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTF-pk-GoO">
-                                <rect key="frame" x="102" y="44" width="214" height="21"/>
+                                <rect key="frame" x="100" y="42" width="214" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -429,10 +432,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="245"/>
+            <point key="canvasLocation" x="150" y="209"/>
         </scene>
     </scenes>
     <resources>
-        <image name="pizza-icon-450x450" width="450" height="450"/>
+        <image name="pizza_black_lg_black" width="300" height="287"/>
+        <image name="pizza_black_med_black" width="300" height="287"/>
+        <image name="pizza_black_small_black" width="300" height="287"/>
     </resources>
 </document>
