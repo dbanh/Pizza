@@ -338,8 +338,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3v-CW-y2v">
-                                <rect key="frame" x="57" y="656" width="106" height="30"/>
-                                <state key="normal" title="Return to menu"/>
+                                <rect key="frame" x="86" y="656" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
                                 <connections>
                                     <segue destination="BIS-pA-FcH" kind="show" id="Gm3-Ak-JDr"/>
                                 </connections>
@@ -528,8 +528,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nr-P5-MrY">
-                                <rect key="frame" x="63" y="651" width="106" height="30"/>
-                                <state key="normal" title="Return to menu"/>
+                                <rect key="frame" x="92" y="651" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
                                 <connections>
                                     <segue destination="BIS-pA-FcH" kind="show" id="Ub4-gJ-gwB"/>
                                 </connections>
